@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guha Store</title>
+
+    <!-- start css -->
+    <link rel="stylesheet" href="./assets/css/helper.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <!-- end css -->
+
+    <!-- start google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- end google font -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <!-- start header -->
+      <header class="header">
+        <div class="header__topbar">
+          <div class="container text-center">
+            <p class="h5">Free shipping available on all orders!</p>
+          </div>
+        </div>
+        <div class="header__main">
+          <div class="container">
+            <div class="header__container d-grid middle-left">
+              <!-- menu button -->
+              <div class="header__btn md-none d-flex align-center">
+                <div class="navbar__icons">
+                  <div class="navbar__icon"></div>
+                </div>
+              </div>
+              <div class="header__logo d-flex justify-center align-center">
+                <a href="#" class="d-inline-block">
+                  <img
+                    class="d-block w-100 svg__icon"
+                    src="./assets/images/logo/logo.png"
+                    alt="Logo"
+                  />
+                </a>
+              </div>
+              <nav class="header__nav space-between d-flex">
+                <ul class="nav__list md-flex">
+                  <li class="nav__item md-none">
+                    <a href="#" class="nav__anchor" style="content: ''"></a>
+                  </li>
+                  <li class="nav__item nav__items h7">
+                    <span
+                      class="nav__anchor p-relative h7 d-flex align-center space-between w-100 cursor-pointer"
+                      href="#"
+                    >
+                      Shop
+                      <img
+                        class="md-none svg__icon"
+                        src="./assets/images/icon/icon-nextlink.svg"
+                        alt="next"
+                      />
+                      <img
+                        class="d-none md-block svg__icon"
+                        src="./assets/images/icon/icon-chevron-down.svg"
+                        alt="back"
+                        style="margin-left: 8px"
+                      />
+                    </span>
+                    <ul class="header__subnav p-absolute">
+                      <li class="nav__item md-none h5">
+                        <span
+                          class="nav__anchor cursor-pointer d-flex align-center"
+                          style="content: ''"
+                        >
+                          <img
+                            class="md-none svg__icon"
+                            src="./assets/images/icon/arrow-left.svg"
+                            alt=""
+                            style="margin-right: 8px"
+                          />
+                          Shop
+                        </span>
+                      </li>
+                      <li class="nav__item">
+                        <a
+                          class="nav__anchor h7 d-flex align-center space-between"
+                          href="#"
+                        >
+                          Product all
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav__item">
+                    <a
+                      class="nav__anchor h7 d-flex align-center space-between"
+                      href="#"
+                    >
+                      Blog
+                    </a>
+                  </li>
+                </ul>
+                <div class="flex-1"></div>
+                <div class="header__footer md-none">
+                  <div class="person-login d-flex align-center">
+                    <img
+                      class="svg__icon"
+                      src="./assets/images/icon/icon-person.svg"
+                      alt="person"
+                    />
+                    <span>Log in</span>
+                  </div>
+                  <ul class="social__items d-flex align-center">
+                    <li class="social__item">
+                      <a class="" href="#">
+                        <img
+                          class="svg__icon d-block"
+                          src="./assets/images/icon/twitter.svg"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="" href="#">
+                        <img
+                          class="svg__icon d-block"
+                          src="./assets/images/icon/facebook.svg"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="" href="#">
+                        <img
+                          class="svg__icon d-block"
+                          src="./assets/images/icon/instagram.svg"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="" href="#">
+                        <img
+                          class="svg__icon d-block"
+                          src="./assets/images/icon/tiktok.svg"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="" href="#">
+                        <img
+                          class="svg__icon d-block"
+                          src="./assets/images/icon/youtube.svg"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+              <div class="header__action d-flex align-center">
+                <div class="header__action--item d-flex align-center">
+                  <a class="header__action--link d-inline-block" href="#">
+                    <img
+                      class="action__icon svg__icon d-block"
+                      src="./assets/images/icon/icon-search.svg"
+                      alt="search"
+                    />
+                  </a>
+                </div>
+                <div class="header__action--item align-center d-none md-flex">
+                  <a class="header__action--link d-inline-block" href="#">
+                    <img
+                      class="action__icon svg__icon d-block"
+                      src="./assets/images/icon/icon-person.svg"
+                      alt="person"
+                    />
+                  </a>
+                </div>
+                <div class="header__action--item d-flex align-center">
+                  <a class="header__action--link d-inline-block" href="#">
+                    <img
+                      class="action__icon svg__icon d-block"
+                      src="./assets/images/icon/icon-cart.svg"
+                      alt="cart"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-nav-overlay"></div>
+        </div>
+      </header>
+      <!-- end header -->
+
+      <!-- start banner -->
+      <div class="banner">
+        <div class="banner__box d-flex p-relative banner__medium w-100">
+          <div class="image__banner image__item p-absolute" style="--w: 6">
+            <img
+              class="w-100 h-100 d-block object-fit-cover"
+              src="./assets/images/banner/image-banner-1.webp"
+              alt="banner1"
+            />
+          </div>
+          <div class="image__banner image__item p-absolute" style="--w: 6">
+            <img
+              class="w-100 h-100 d-block object-fit-cover"
+              src="./assets/images/banner/image-banner-2.webp"
+              alt="banner2"
+            />
+          </div>
+          <div class="banner__overlay p-absolute"></div>
+
+          <div class="container d-flex content__middle-center">
+            <div class="banner__container">
+              <div class="banner__content text-center hidden__content">
+                <h2 class="banner__heading h1">Image banner</h2>
+                <span class="banner__description">
+                  Phần nội dung mô tả vể cửa hàng
+                </span>
+                <a href="#" class="btn banner__btn">Show now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end banner -->
+
+      <!-- start collage -->
+      <section class="collage pd-top">
+        <div class="container">
+          <h2 class="collage__heading heading-3">Back in stock</h2>
+          <div class="collage__items d-grid">
+            <div
+              class="collage__item collage__item--large d-flex flex-column h-100"
+            >
+              <img
+                class="w-100 d-block object-fit-cover flex-1"
+                src="./assets/images/banner/image-banner-1.webp"
+                alt="image banner"
+              />
+              <div class="collage__container">
+                <div class="collage__content d-flex">
+                  <a class="align-center" href="#"> Bags </a>
+                  <img
+                    src="./assets/images/icon/icon-nextlink.svg"
+                    alt="next-link"
+                    style="margin-left: 8px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="collage__item d-flex flex-column h-100">
+              <img
+                class="w-100 d-block object-fit-cover flex-1"
+                src="./assets/images/banner/image-banner-1.webp"
+                alt="image banner"
+              />
+              <div class="collage__container">
+                <div class="collage__content d-flex">
+                  <a class="align-center" href="#"> Shoes </a>
+                  <img
+                    src="./assets/images/icon/icon-nextlink.svg"
+                    alt="next-link"
+                    style="margin-left: 8px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="collage__item d-flex flex-column h-100">
+              <img
+                class="w-100 d-block object-fit-cover flex-1"
+                src="./assets/images/banner/image-banner-1.webp"
+                alt="image banner"
+              />
+              <div class="collage__container">
+                <div class="collage__content d-flex">
+                  <a class="align-center" href="#"> Shoes </a>
+                  <img
+                    src="./assets/images/icon/icon-nextlink.svg"
+                    alt="next-link"
+                    style="margin-left: 8px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end collage -->
+
+      <!-- start product list -->
+      <div class="product-list">
+        <div class="container pd-section">
+          <div class="row">
+            <div class="col">
+              <div class="product__title">
+                <h2 class="h2">Product list</h2>
+                <p class="h9">Mô tả về danh sách bán hàng này</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" style="--w: 6; --w-md: 3">
+              <div class="product__card d-flex flex-column">
+                <div class="product__image p-relative">
+                  <a href="#">
+                    <img
+                      class="w-100 h-100 object-fit-cover"
+                      src="./assets/images/product/product-image.jpg"
+                      alt="product image"
+                    />
+                  </a>
+                  <span class="product__sale h6 p-absolute"> Sale </span>
+                </div>
+                <div class="product__info">
+                  <a href="#">
+                    <h3 class="product__name h5">Product name</h3>
+                  </a>
+                  <a href="#">
+                    <div class="product__price align-center">
+                      <del class="product__price--old h5">3.190.000₫</del>
+                      <span class="product__price--new h4">2.890.000₫</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--w: 6; --w-md: 3">
+              <div class="product__card d-flex flex-column">
+                <div class="product__image p-relative">
+                  <a href="#">
+                    <img
+                      class="w-100 h-100 object-fit-cover"
+                      src="./assets/images/product/product-image.jpg"
+                      alt="product image"
+                    />
+                  </a>
+                  <span class="product__sale h6 p-absolute"> Sale </span>
+                </div>
+                <div class="product__info">
+                  <a href="#">
+                    <h3 class="product__name h5">Product name</h3>
+                  </a>
+                  <a href="#">
+                    <div class="product__price align-center">
+                      <del class="product__price--old h5">3.190.000₫</del>
+                      <span class="product__price--new h4">2.890.000₫</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--w: 6; --w-md: 3">
+              <div class="product__card d-flex flex-column">
+                <div class="product__image p-relative">
+                  <a href="#">
+                    <img
+                      class="w-100 h-100 object-fit-cover"
+                      src="./assets/images/product/product-image.jpg"
+                      alt="product image"
+                    />
+                  </a>
+                  <span class="product__sale h6 p-absolute"> Sale </span>
+                </div>
+                <div class="product__info">
+                  <a href="#">
+                    <h3 class="product__name h5">Product name</h3>
+                  </a>
+                  <a href="#">
+                    <div class="product__price align-center">
+                      <del class="product__price--old h5">3.190.000₫</del>
+                      <span class="product__price--new h4">2.890.000₫</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--w: 6; --w-md: 3">
+              <div class="product__card d-flex flex-column">
+                <div class="product__image p-relative">
+                  <a href="#">
+                    <img
+                      class="w-100 h-100 object-fit-cover"
+                      src="./assets/images/product/product-image.jpg"
+                      alt="product image"
+                    />
+                  </a>
+                  <span class="product__sale h6 p-absolute"> Sale </span>
+                </div>
+                <div class="product__info">
+                  <a href="#">
+                    <h3 class="product__name h5">Product name</h3>
+                  </a>
+                  <a href="#">
+                    <div class="product__price align-center">
+                      <del class="product__price--old h5">3.190.000₫</del>
+                      <span class="product__price--new h4">2.890.000₫</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--w: 6; --w-md: 3">
+              <div class="product__card d-flex flex-column">
+                <div class="product__image p-relative">
+                  <a href="#">
+                    <img
+                      class="w-100 h-100 object-fit-cover"
+                      src="./assets/images/product/product-image.jpg"
+                      alt="product image"
+                    />
+                  </a>
+                  <span class="product__sale h6 p-absolute"> Sale </span>
+                </div>
+                <div class="product__info">
+                  <a href="#">
+                    <h3 class="product__name h5">Product name</h3>
+                  </a>
+                  <a href="#">
+                    <div class="product__price align-center">
+                      <del class="product__price--old h5">3.190.000₫</del>
+                      <span class="product__price--new h4">2.890.000₫</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--w: 6; --w-md: 3">
+              <div class="product__card d-flex flex-column">
+                <div class="product__image p-relative">
+                  <a href="#">
+                    <img
+                      class="w-100 h-100 object-fit-cover"
+                      src="./assets/images/product/product-image.jpg"
+                      alt="product image"
+                    />
+                  </a>
+                  <span class="product__sale h6 p-absolute"> Sale </span>
+                </div>
+                <div class="product__info">
+                  <a href="#">
+                    <h3 class="product__name h5">Product name</h3>
+                  </a>
+                  <a href="#">
+                    <div class="product__price align-center">
+                      <del class="product__price--old h5">3.190.000₫</del>
+                      <span class="product__price--new h4">2.890.000₫</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--w: 6; --w-md: 3">
+              <div class="product__card d-flex flex-column">
+                <div class="product__image p-relative">
+                  <a href="#">
+                    <img
+                      class="w-100 h-100 object-fit-cover"
+                      src="./assets/images/product/product-image.jpg"
+                      alt="product image"
+                    />
+                  </a>
+                  <span class="product__sale h6 p-absolute"> Sale </span>
+                </div>
+                <div class="product__info">
+                  <a href="#">
+                    <h3 class="product__name h5">Product name</h3>
+                  </a>
+                  <a href="#">
+                    <div class="product__price align-center">
+                      <del class="product__price--old h5">3.190.000₫</del>
+                      <span class="product__price--new h4">2.890.000₫</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="--w: 6; --w-md: 3">
+              <div class="product__card d-flex flex-column">
+                <div class="product__image p-relative">
+                  <a href="#">
+                    <img
+                      class="w-100 h-100 object-fit-cover"
+                      src="./assets/images/product/product-image.jpg"
+                      alt="product image"
+                    />
+                  </a>
+                  <span class="product__sale h6 p-absolute"> Sale </span>
+                </div>
+                <div class="product__info">
+                  <a href="#">
+                    <h3 class="product__name h5">Product name</h3>
+                  </a>
+                  <a href="#">
+                    <div class="product__price align-center">
+                      <del class="product__price--old h5">3.190.000₫</del>
+                      <span class="product__price--new h4">2.890.000₫</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="text-center pd-top">
+                <a class="btn btn__view--all btn__outline" href="#">View all</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end product list -->
+
+      <!-- start image width text -->
+      <div class="container pd-section">
+        <div class="image-text__container d-flex">
+          <div class="image-text__media" style="--w:12; --w-md: 6;">
+              <img src="./assets/images/banner/banner-3.webp" class="w-100 h-100 object-fit-cover d-block" alt="">
+          </div>
+          <div class="image-text__text" style="--w:12; --w-md: 6;">
+            <div class="image-text__box h-100 d-flex content__middle-left">
+              <div class="image-text__content text-left">
+                <h2 class="image-text__title h2">Image with text</h2>
+                <p class="image-text__context h4">Mô tả về banner này nội dung gì đó</p>
+                <a href="#" class="image-text__btn btn btn__outline">
+                  View now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end image width text -->
+
+      <!-- start footer -->
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="container">
+            <div class="row">
+              <div class="col" style="--w-md: 4">
+                <div class="footer__block pd-top">
+                  <div class="block__heading">
+                    Quick links
+                  </div>
+                  <ul class="block__list">
+                    <li class="block__item"><a class="footer__anchor" href="#">Bags</a></li>
+                    <li class="block__item"><a class="footer__anchor" href="#">Shoes</a></li>
+                    <li class="block__item"><a class="footer__anchor" href="#">Look book</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col" style="--w-md: 4">
+                <div class="footer__block pd-top">
+                  <div class="block__heading">
+                    Quick links
+                  </div>
+                  <ul class="block__list">
+                    <li class="block__item"><a class="footer__anchor" href="#">Bags</a></li>
+                    <li class="block__item"><a class="footer__anchor" href="#">Shoes</a></li>
+                    <li class="block__item"><a class="footer__anchor" href="#">Look book</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col" style="--w-md: 4">
+                <div class="footer__block pd-top">
+                  <div class="footer__logo">
+                    <img src="./assets/images/logo/logo.png" alt="logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col pd-top" style="--w-md: 4;">
+                <div class="footer__subscribe">
+                  <h3 class="block__heading text-center">
+                    Subscribe to our emails
+                  </h3>
+                  <div class="email-signup__form justify-center d-flex">
+                    <div class="w-100 form__container p-relative">
+                      <form action="#">
+                        <input
+                          class="email-signup__input btn h4 w-100"
+                          type="email"
+                          placeholder="email"
+                          name="contact"
+                        >
+                        <button type="submit" class="icon__input p-absolute">
+                          <img class="svg__icon" src="./assets/images/icon/icon-nextlink.svg" alt="next">
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" style="--w-md: 4;"></div>
+              <div class="col pd-top d-flex align-center" style="--w-md:4;">
+                <ul class="social__items d-flex align-center">
+                  <li class="social__item">
+                    <a class="" href="#">
+                      <img
+                        class="svg__icon d-block"
+                        src="./assets/images/icon/twitter.svg"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="" href="#">
+                      <img
+                        class="svg__icon d-block"
+                        src="./assets/images/icon/facebook.svg"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="" href="#">
+                      <img
+                        class="svg__icon d-block"
+                        src="./assets/images/icon/instagram.svg"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="" href="#">
+                      <img
+                        class="svg__icon d-block"
+                        src="./assets/images/icon/tiktok.svg"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="" href="#">
+                      <img
+                        class="svg__icon d-block"
+                        src="./assets/images/icon/youtube.svg"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col text-center">
+                  <p class="footer__copy-right">© 2021, dawn-theme-default Powered by Shopify</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/navigation.js"></script>
+  </body>
+</html>
